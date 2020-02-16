@@ -47,6 +47,10 @@
   </url>
   
   <url>
+    <loc>https://qitmeer.github.io/docs/en/tutorials/qitmeer-wallet-rpc/</loc>
+  </url>
+  
+  <url>
     <loc>https://qitmeer.github.io/docs/en/reference/qxtools/hash/sha256/</loc>
   </url>
   
@@ -356,6 +360,11 @@
   </url>
   
   <url>
+    <loc>https://qitmeer.github.io/docs/en/json-rpc-api/overview/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://qitmeer.github.io/docs/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -372,6 +381,10 @@
                 hreflang="en"
                 href="https://qitmeer.github.io/docs/en/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/json-rpc-api/</loc>
   </url>
   
   <url>
@@ -410,6 +423,22 @@
                 hreflang="en"
                 href="https://qitmeer.github.io/docs/en/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/json-rpc-api/block/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/json-rpc-api/chain/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/json-rpc-api/miner/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/json-rpc-api/transaction/</loc>
   </url>
   
 </urlset>
