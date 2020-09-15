@@ -243,6 +243,20 @@
   </url>
   
   <url>
+    <loc>https://qitmeer.github.io/docs/cn/wallet-json-rpc-api/unlock/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://qitmeer.github.io/docs/en/wallet-json-rpc-api/unlock/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://qitmeer.github.io/docs/cn/wallet-json-rpc-api/unlock/"
+                />
+  </url>
+  
+  <url>
     <loc>https://qitmeer.github.io/docs/cn/reference/qxtools/</loc>
     <xhtml:link
                 rel="alternate"
@@ -291,6 +305,20 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://qitmeer.github.io/docs/cn/json-rpc-api/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/cn/wallet-json-rpc-api/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://qitmeer.github.io/docs/en/wallet-json-rpc-api/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://qitmeer.github.io/docs/cn/wallet-json-rpc-api/"
                 />
   </url>
   
