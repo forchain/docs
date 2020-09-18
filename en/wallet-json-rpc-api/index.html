@@ -12,20 +12,20 @@
     <title>Qitmeer Wallet JSON RPC :: Qitmeer Documentation</title>
 
     
-    <link href="https://qitmeer.github.io/docs/css/nucleus.css?1600165078" rel="stylesheet">
-    <link href="https://qitmeer.github.io/docs/css/fontawesome-all.min.css?1600165078" rel="stylesheet">
-    <link href="https://qitmeer.github.io/docs/css/hybrid.css?1600165078" rel="stylesheet">
-    <link href="https://qitmeer.github.io/docs/css/featherlight.min.css?1600165078" rel="stylesheet">
-    <link href="https://qitmeer.github.io/docs/css/perfect-scrollbar.min.css?1600165078" rel="stylesheet">
-    <link href="https://qitmeer.github.io/docs/css/auto-complete.css?1600165078" rel="stylesheet">
-    <link href="https://qitmeer.github.io/docs/css/atom-one-dark-reasonable.css?1600165078" rel="stylesheet">
-    <link href="https://qitmeer.github.io/docs/css/theme.css?1600165078" rel="stylesheet">
-    <link href="https://qitmeer.github.io/docs/css/hugo-theme.css?1600165078" rel="stylesheet">
+    <link href="https://qitmeer.github.io/docs/css/nucleus.css?1600421771" rel="stylesheet">
+    <link href="https://qitmeer.github.io/docs/css/fontawesome-all.min.css?1600421771" rel="stylesheet">
+    <link href="https://qitmeer.github.io/docs/css/hybrid.css?1600421771" rel="stylesheet">
+    <link href="https://qitmeer.github.io/docs/css/featherlight.min.css?1600421771" rel="stylesheet">
+    <link href="https://qitmeer.github.io/docs/css/perfect-scrollbar.min.css?1600421771" rel="stylesheet">
+    <link href="https://qitmeer.github.io/docs/css/auto-complete.css?1600421771" rel="stylesheet">
+    <link href="https://qitmeer.github.io/docs/css/atom-one-dark-reasonable.css?1600421771" rel="stylesheet">
+    <link href="https://qitmeer.github.io/docs/css/theme.css?1600421771" rel="stylesheet">
+    <link href="https://qitmeer.github.io/docs/css/hugo-theme.css?1600421771" rel="stylesheet">
     
-      <link href="https://qitmeer.github.io/docs/css/theme-mine.css?1600165078" rel="stylesheet">
+      <link href="https://qitmeer.github.io/docs/css/theme-mine.css?1600421771" rel="stylesheet">
     
 
-    <script src="https://qitmeer.github.io/docs/js/jquery-3.3.1.min.js?1600165078"></script>
+    <script src="https://qitmeer.github.io/docs/js/jquery-3.3.1.min.js?1600421771"></script>
     <style>
       :root #header + #content > #left > #rlblock_left{
           display:none !important;
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://qitmeer.github.io/docs/js/lunr.min.js?1600165078"></script>
-<script type="text/javascript" src="https://qitmeer.github.io/docs/js/auto-complete.js?1600165078"></script>
+<script type="text/javascript" src="https://qitmeer.github.io/docs/js/lunr.min.js?1600421771"></script>
+<script type="text/javascript" src="https://qitmeer.github.io/docs/js/auto-complete.js?1600421771"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/qitmeer.github.io\/docs\/en";
     
 </script>
-<script type="text/javascript" src="https://qitmeer.github.io/docs/js/search.js?1600165078"></script>
+<script type="text/javascript" src="https://qitmeer.github.io/docs/js/search.js?1600421771"></script>
 
     
   </div>
@@ -2405,13 +2405,13 @@
  
   
     
-    <li data-nav-id="/en/wallet-json-rpc-api/sendtoaddressbyaccount/" title="sendToAddressByAccount" class="dd-item 
+    <li data-nav-id="/en/wallet-json-rpc-api/lock/" title="lock" class="dd-item 
         
         
         
         ">
-      <a href="https://qitmeer.github.io/docs/en/wallet-json-rpc-api/sendtoaddressbyaccount/">
-          sendToAddressByAccount
+      <a href="https://qitmeer.github.io/docs/en/wallet-json-rpc-api/lock/">
+          lock
           
       </a>
       
@@ -2429,13 +2429,13 @@
  
   
     
-    <li data-nav-id="/en/wallet-json-rpc-api/lock/" title="unlock" class="dd-item 
+    <li data-nav-id="/en/wallet-json-rpc-api/sendtoaddressbyaccount/" title="sendToAddressByAccount" class="dd-item 
         
         
         
         ">
-      <a href="https://qitmeer.github.io/docs/en/wallet-json-rpc-api/lock/">
-          unlock
+      <a href="https://qitmeer.github.io/docs/en/wallet-json-rpc-api/sendtoaddressbyaccount/">
+          sendToAddressByAccount
           
       </a>
       
@@ -2937,20 +2937,6 @@
                   
               
                   
-                    
-                    
-                      <option id="cn" value="https://qitmeer.github.io/docs/cn/wallet-json-rpc-api/">中文（简体）</option>
-                    
-                  
-              
-                  
-              
-          
-              
-              
-                  
-              
-                  
               
                   
                     
@@ -3053,10 +3039,18 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#qitmeer-wallet-json-rpc-reference">Qitmeer Wallet JSON RPC Reference</a>
+    <li><a href="#api-list">API List</a>
       <ul>
         <li><a href="#wallet">Wallet</a></li>
         <li><a href="#ui">UI</a></li>
+      </ul>
+    </li>
+    <li><a href="#instruction">Instruction</a>
+      <ul>
+        <li><a href="#build">Build</a></li>
+        <li><a href="#config">Config</a></li>
+        <li><a href="#run">Run</a></li>
+        <li><a href="#call-api">Call API</a></li>
       </ul>
     </li>
   </ul>
@@ -3083,7 +3077,7 @@
         
 
 
-	<h2 id="qitmeer-wallet-json-rpc-reference">Qitmeer Wallet JSON RPC Reference</h2>
+	<h2 id="api-list">API List</h2>
 <h3 id="wallet">Wallet</h3>
 <ul>
 <li><a href="unlock">unlock</a></li>
@@ -3106,7 +3100,33 @@
 <ul>
 <li><a href="openWallet">openWallet</a></li>
 </ul>
+<h2 id="instruction">Instruction</h2>
+<h3 id="build">Build</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">git clone https://github.com/qitmeer/qitmeer-wallet ~/github.com/qitmeer/qitmeer-wallet
+ cd ~/github.com/qitmeer/qitmeer-wallet
+make build
+</code></pre></div><h3 id="config">Config</h3>
+<pre><code>vi config.toml
 
+# make sure ui=false
+
+</code></pre><h3 id="run">Run</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./qitmeer-wallet web
+</code></pre></div><h3 id="call-api">Call API</h3>
+<h4 id="command">Command</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># by cURL</span>
+curl -k -u <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>USER<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>PASSWORD<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> -X POST -H <span style="color:#e6db74">&#39;Content-Type: application/json&#39;</span> --data <span style="color:#e6db74">&#39;{&#34;jsonrpc&#34;:&#34;1.0&#34;,&#34;method&#34;:&#34;${METHOD}&#34;,&#34;params&#34;:[${PARAMS}],&#34;id&#34;:1}&#39;</span> <span style="color:#e6db74">${</span>API_URL<span style="color:#e6db74">}</span> | jq
+</code></pre></div><h4 id="parameters">Parameters</h4>
+<ol>
+<li>USER - rpcUser in the config</li>
+<li>PASSWORD - rpcPass in the config</li>
+<li>PASSWORD - listeners in the config</li>
+<li>METHOD - RPC call name</li>
+<li>PARAMS - RPC call parameters</li>
+</ol>
+<h4 id="example">Example</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">curl -k -u <span style="color:#e6db74">&#34;user:password&#34;</span> -X POST -H <span style="color:#e6db74">&#39;Content-Type: application/json&#39;</span> --data <span style="color:#e6db74">&#39;{&#34;jsonrpc&#34;:&#34;1.0&#34;,&#34;method&#34;:&#34;wallet_createAccount&#34;,&#34;params&#34;:[&#34;account&#34;],&#34;id&#34;:1}&#39;</span> http://127.0.0.1:38130/api | jq
+</code></pre></div>
 
 
 
@@ -5022,22 +5042,22 @@
 <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
 </div>
 
-<script src="https://qitmeer.github.io/docs/js/clipboard.min.js?1600165078"></script>
-<script src="https://qitmeer.github.io/docs/js/perfect-scrollbar.min.js?1600165078"></script>
-<script src="https://qitmeer.github.io/docs/js/perfect-scrollbar.jquery.min.js?1600165078"></script>
-<script src="https://qitmeer.github.io/docs/js/jquery.sticky.js?1600165078"></script>
-<script src="https://qitmeer.github.io/docs/js/featherlight.min.js?1600165078"></script>
-<script src="https://qitmeer.github.io/docs/js/html5shiv-printshiv.min.js?1600165078"></script>
+<script src="https://qitmeer.github.io/docs/js/clipboard.min.js?1600421771"></script>
+<script src="https://qitmeer.github.io/docs/js/perfect-scrollbar.min.js?1600421771"></script>
+<script src="https://qitmeer.github.io/docs/js/perfect-scrollbar.jquery.min.js?1600421771"></script>
+<script src="https://qitmeer.github.io/docs/js/jquery.sticky.js?1600421771"></script>
+<script src="https://qitmeer.github.io/docs/js/featherlight.min.js?1600421771"></script>
+<script src="https://qitmeer.github.io/docs/js/html5shiv-printshiv.min.js?1600421771"></script>
 
-<script src="https://qitmeer.github.io/docs/js/highlight.pack.js?1600165078"></script>
+<script src="https://qitmeer.github.io/docs/js/highlight.pack.js?1600421771"></script>
 <script>hljs.initHighlightingOnLoad();</script> 
 
 
-<script src="https://qitmeer.github.io/docs/js/modernizr.custom-3.6.0.js?1600165078"></script>
-<script src="https://qitmeer.github.io/docs/js/learn.js?1600165078"></script>
-<script src="https://qitmeer.github.io/docs/js/hugo-learn.js?1600165078"></script>
-<link href="https://qitmeer.github.io/docs/mermaid/mermaid.css?1600165078" rel="stylesheet" />
-<script src="https://qitmeer.github.io/docs/mermaid/mermaid.js?1600165078"></script>
+<script src="https://qitmeer.github.io/docs/js/modernizr.custom-3.6.0.js?1600421771"></script>
+<script src="https://qitmeer.github.io/docs/js/learn.js?1600421771"></script>
+<script src="https://qitmeer.github.io/docs/js/hugo-learn.js?1600421771"></script>
+<link href="https://qitmeer.github.io/docs/mermaid/mermaid.css?1600421771" rel="stylesheet" />
+<script src="https://qitmeer.github.io/docs/mermaid/mermaid.js?1600421771"></script>
 
 
 <script>

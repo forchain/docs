@@ -140,13 +140,6 @@
 	"content": "sendRawTransaction 函数名：sendRawTransaction {sign_raw_tx} {allow_high_fee} 说明：发送交易  sign_raw_tx:签名后的交易 allow_high_fee：允许的最大交易费  实例：  sendRawTransaction 0100000001ff5d53a7070fa9f0a9d12af729d2cbaf355ef1173c106a84cf9ef3a46bff03b202000000ffffffff01005504790a0000001976a914627777996288556166614462639988446255776688ac000000000000000001000000000000000000000000ffffffff6b483045022100dced4d67dd74647d0036077ee5b435838934377b1d296dd9da852772911e3be2022063dd346bd812a894968b8acacead7e7beff48947657a82f1e8f9c38876d4c905012103aba0a09f5b44138a46a2e5d26b8659923d84c4ba9437e22c3828cac43d0edb49 true "
 },
 {
-	"uri": "https://qitmeer.github.io/docs/cn/wallet-json-rpc-api/unlock/",
-	"title": "unlock",
-	"tags": [],
-	"description": "",
-	"content": "wallet_unlock unlock wallet\nParameters  password: (string) 钱包密码 second: (numeric) 解锁时间,单位秒  Returns Example Request {\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_unlock\u0026#34;,\u0026#34;params\u0026#34;:[\u0026#34;password\u0026#34;,30],\u0026#34;id\u0026#34;:1} Response "
-},
-{
 	"uri": "https://qitmeer.github.io/docs/cn/reference/qxtools/",
 	"title": "Qx 工具集",
 	"tags": [],
@@ -166,13 +159,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Qitmeer JSON RPC 命令列表  getBlockByOrder getBlockByNum getBlock getBlockV2 getBlockHeader getBlockCount getBlockTotal getBlockBestHash getBlockhashByRange isOnMainChain getMainChainHeight getOrphansTotal getTips getMempool getPeerInfo getNodeInfo isBlue getFees getRawTransaction sendRawTransaction  "
-},
-{
-	"uri": "https://qitmeer.github.io/docs/cn/wallet-json-rpc-api/",
-	"title": "Qitmeer Wallet JSON RPC",
-	"tags": [],
-	"description": "",
-	"content": "Qitmeer Wallet JSON RPC 命令列表 Wallet  unlock lock getAccountsAndBalance createAccount getAddressesByAccount createAddress sendToAddressByAccount getTxListByAddr importWifPrivKey dumpPrivKey syncStats getUtxo importPrivKey getBalanceByAddr sendToAddressBatch  UI  openWallet  Qitmeer-wallet RPC Reference Download Qitmeer Wallet from github.com/Qitmeer/qitmeer-wallet\n# run rpc or ul model will support rpc interface ./qitmeer-wallet web Usage:\nRPC interface URL http://127.0.0.1:38130/api\ncurl -k -u \u0026#34;user:password\u0026#34; -X POST -H \u0026#39;Content-Type: application/json\u0026#39; --data \u0026#39;{\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_createAccount\u0026#34;,\u0026#34;params\u0026#34;:[\u0026#34;account\u0026#34;],\u0026#34;id\u0026#34;:1}\u0026#39; http://127.0.0.1:38130/api | jq "
 },
 {
 	"uri": "https://qitmeer.github.io/docs/cn/categories/",

@@ -336,6 +336,13 @@
 	"content": "Perform a keccak256 of Base16 data.\nkeccak256 calculate legacy keccak 256 hash of a bash16 data.\n~ qx keccak-256 --help Usage: qx keccak-256 [hexstring] Example ~ qx keccak-256 900df00d 4ceee8dafd892f10425a56dfde748a49fdc1b6ff85822170a059ad9080c2b3f3 "
 },
 {
+	"uri": "https://qitmeer.github.io/docs/en/wallet-json-rpc-api/lock/",
+	"title": "lock",
+	"tags": [],
+	"description": "",
+	"content": "wallet_lock lock wallet\nParameters  password: (string) wallet password second: (numeric) unlock duration, unit second  Returns Example Request {\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_lock\u0026#34;,\u0026#34;params\u0026#34;:[],\u0026#34;id\u0026#34;:1} Response "
+},
+{
 	"uri": "https://qitmeer.github.io/docs/en/reference/qxtools/entropy/mnemonic/",
 	"title": "mnemonic",
 	"tags": [],
@@ -369,13 +376,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Qitmeer Tutorials List   Development Environment\n  Qitmeer Installation\n  Qitmeer Cross-chain Atomic-swapping\n  Qitmeer Miner Guide\n  Qitmeer Rpc Guide\n  Qitmeer Wallet Rpc Guide\n  Qitmeer JS Guide\n  "
-},
-{
-	"uri": "https://qitmeer.github.io/docs/en/wallet-json-rpc-api/lock/",
-	"title": "unlock",
-	"tags": [],
-	"description": "",
-	"content": "wallet_lock lock wallet\nParameters  password: (string) wallet password second: (numeric) unlock duration, unit second  Returns Example Request {\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_lock\u0026#34;,\u0026#34;params\u0026#34;:[],\u0026#34;id\u0026#34;:1} Response "
 },
 {
 	"uri": "https://qitmeer.github.io/docs/en/wallet-json-rpc-api/unlock/",
@@ -564,7 +564,7 @@
 	"title": "Qitmeer Wallet JSON RPC",
 	"tags": [],
 	"description": "",
-	"content": "Qitmeer Wallet JSON RPC Reference Wallet  unlock lock getAccountsAndBalance createAccount getAddressesByAccount createAddress sendToAddressByAccount getTxListByAddr importWifPrivKey dumpPrivKey syncStats getUtxo importPrivKey getBalanceByAddr sendToAddressBatch  UI  openWallet  "
+	"content": "API List Wallet  unlock lock getAccountsAndBalance createAccount getAddressesByAccount createAddress sendToAddressByAccount getTxListByAddr importWifPrivKey dumpPrivKey syncStats getUtxo importPrivKey getBalanceByAddr sendToAddressBatch  UI  openWallet  Instruction Build git clone https://github.com/qitmeer/qitmeer-wallet ~/github.com/qitmeer/qitmeer-wallet cd ~/github.com/qitmeer/qitmeer-wallet make build Config vi config.toml # make sure ui=false Run ./qitmeer-wallet web Call API Command # by cURL curl -k -u \u0026#34;${USER}:${PASSWORD}\u0026#34; -X POST -H \u0026#39;Content-Type: application/json\u0026#39; --data \u0026#39;{\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;${METHOD}\u0026#34;,\u0026#34;params\u0026#34;:[${PARAMS}],\u0026#34;id\u0026#34;:1}\u0026#39; ${API_URL} | jq Parameters  USER - rpcUser in the config PASSWORD - rpcPass in the config PASSWORD - listeners in the config METHOD - RPC call name PARAMS - RPC call parameters  Example curl -k -u \u0026#34;user:password\u0026#34; -X POST -H \u0026#39;Content-Type: application/json\u0026#39; --data \u0026#39;{\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_createAccount\u0026#34;,\u0026#34;params\u0026#34;:[\u0026#34;account\u0026#34;],\u0026#34;id\u0026#34;:1}\u0026#39; http://127.0.0.1:38130/api | jq "
 },
 {
 	"uri": "https://qitmeer.github.io/docs/en/faqs/",
