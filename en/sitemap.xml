@@ -319,7 +319,7 @@
   </url>
   
   <url>
-    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/wallet_createaccount/</loc>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/wallet-create-account/</loc>
   </url>
   
   <url>
@@ -365,6 +365,22 @@
   </url>
   
   <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/qitmeed_del/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/qitmeed_status/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/qitmeerd_reset/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/qitmeerd_update/</loc>
+  </url>
+  
+  <url>
     <loc>https://qitmeer.github.io/docs/en/json-rpc-api/sendrawtransaction/</loc>
     <xhtml:link
                 rel="alternate"
@@ -391,7 +407,27 @@
   </url>
   
   <url>
-    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/wallet_unlock/</loc>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/ui_createwallet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/ui_makeseed/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/ui_openwallet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/ui_recoverwallet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/ui_walletstatus/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/wallet-unlock/</loc>
   </url>
   
   <url>
@@ -713,6 +749,14 @@
   <url>
     <loc>https://qitmeer.github.io/docs/en/reference/qitmeer-cli/blockchain/txsign/</loc>
     <lastmod>2019-07-29T00:38:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/qitmeed_add/</loc>
+  </url>
+  
+  <url>
+    <loc>https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/qitmeed_list/</loc>
   </url>
   
   <url>
