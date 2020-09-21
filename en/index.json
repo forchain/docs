@@ -417,7 +417,7 @@
 	"title": "ui_createWallet",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "CreateWallet create wallet by seed\nParameters  name: (string) account name  Returns Success null\nError -32000 Creating an account requires the wallet to be unlocked. Enter the wallet passphrase with walletpassphrase to unlock\nExample Request curl -k -u \u0026#34;test:test\u0026#34; -X POST -H \u0026#39;Content-Type: application/json\u0026#39; --data \u0026#39;{\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_createAccount\u0026#34;,\u0026#34;params\u0026#34;:[\u0026#34;test_account\u0026#34;],\u0026#34;id\u0026#34;:1}\u0026#39; http://127.0.0.1:8130/api Response {\u0026#34;jsonrpc\u0026#34;:\u0026#34;2.0\u0026#34;,\u0026#34;id\u0026#34;:1,\u0026#34;result\u0026#34;:null} "
 },
 {
 	"uri": "https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/ui_makeseed/",
@@ -459,7 +459,7 @@
 	"title": "wallet_createAddress",
 	"tags": [],
 	"description": "",
-	"content": "wallet_createAddress 创建地址\nParameters  accountName: (string) 账户名  Returns Example Request {\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_createAddress\u0026#34;,\u0026#34;params\u0026#34;:[\u0026#34;default\u0026#34;],\u0026#34;id\u0026#34;:1} Response { \u0026#34;jsonrpc\u0026#34;: \u0026#34;2.0\u0026#34;, \u0026#34;id\u0026#34;: 1, \u0026#34;result\u0026#34;: \u0026#34;TmhMzHPCH6F2k3WYQkyvjhwAXoZt7q8TFv9\u0026#34; } "
+	"content": "CreateAddress returns the next external chained address for a wallet.\nParameters  accountName: (string) name of the account on which the address created  Returns Success new address (base58)\nError -32000 account name \u0026lsquo;test_account\u0026rsquo; not found\nExample Request curl -k -u \u0026#34;test:test\u0026#34; -X POST -H \u0026#39;Content-Type: application/json\u0026#39; --data \u0026#39;{\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_createAddress\u0026#34;,\u0026#34;params\u0026#34;:[\u0026#34;test_account\u0026#34;],\u0026#34;id\u0026#34;:1}\u0026#39; http://127.0.0.1:8130/api Response { \u0026#34;jsonrpc\u0026#34;: \u0026#34;2.0\u0026#34;, \u0026#34;id\u0026#34;: 1, \u0026#34;result\u0026#34;: \u0026#34;Tmdy4W4FeDD2M8Tm8syZJmR2BPdug4Zeozj\u0026#34; } "
 },
 {
 	"uri": "https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/wallet_dumpprivkey/",
@@ -536,7 +536,7 @@
 	"title": "wallet_importPrivKey",
 	"tags": [],
 	"description": "",
-	"content": "wallet_importPrivKey 导入私钥\nParameters  accountName: (string) 导入账户,目前只支持imported privKey: (string) 私钥 rescan: (bool) 是否重新扫描交易记录  Returns Example Request {\u0026#34;jsonrpc\u0026#34;:\u0026#34;1.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_importPrivKey\u0026#34;,\u0026#34;params\u0026#34;:[\u0026#34;imported\u0026#34;,\u0026#34;xxxxxx\u0026#34;,true],\u0026#34;id\u0026#34;:1} Response "
+	"content": "ImportPrivKey imports a private key to the wallet and writes the new wallet to disk.\nNote: this private key is in a hex string and you may generate it with qx wiftopriv tool from a WIF key, which should be compatible with BTC network (in contrast to dumpPrivKey and importWIFPrivKey, both are incompatible). You may export this WIF key from any wallet service that follows this rule, such as KAHF\nParameters  accountName: (string) name of the imported account. MUST be: \u0026ldquo;imported\u0026rdquo; privKey: (hex string) private key.  Returns Success null\nError -32000 -4 imported addresses must belong to the imported account\nExample Request curl --location --request POST \u0026#39;http://127.0.0.1:8130/api/\u0026#39; -u test:test -H \u0026#39;Content-Type: application/json\u0026#39; -d \u0026#39;{\u0026#34;id\u0026#34;:1, \u0026#34;jsonrpc\u0026#34;:\u0026#34;2.0\u0026#34;,\u0026#34;method\u0026#34;:\u0026#34;wallet_importPrivKey\u0026#34;,\u0026#34;params\u0026#34;:[\u0026#34;imported\u0026#34;, \u0026#34;9999999999999999999999999999999999999999999999999999999999999999\u0026#34;]}\u0026#39; Response {\u0026#34;jsonrpc\u0026#34;:\u0026#34;2.0\u0026#34;,\u0026#34;id\u0026#34;:1,\u0026#34;result\u0026#34;:null} "
 },
 {
 	"uri": "https://qitmeer.github.io/docs/en/wallet-json-rpc-api/api-list/wallet_lock/",
