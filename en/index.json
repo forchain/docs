@@ -697,7 +697,7 @@
 	"title": "Qitmeer Token Issuance",
 	"tags": [],
 	"description": "",
-	"content": "Qitmeer assets issuance component, OP_TOKEN, is based on UTXO (Unspent Transaction Output) transaction model, to support massive islamic economic liquidity. OP_TOKEN ensures assets backed by native currency and requires authority-owned licenses to publish assets, preventive from .\n"
+	"content": "Qitmeer assets issuance component, OP_TOKEN, is based on UTXO (Unspent Transaction Output) transaction model, to support massive islamic economic liquidity. OP_TOKEN ensures assets backed by native currency and requires authority-owned licenses to publish assets, prevented from scammer assets.\n"
 },
 {
 	"uri": "https://qitmeer.github.io/docs/en/reference/qxtools/entropy/wif/",
